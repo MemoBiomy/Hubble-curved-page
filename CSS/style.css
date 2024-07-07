@@ -1,0 +1,235 @@
+:root {
+--pink: #ff52bf;
+--lightPink: #ff8fd8;
+--lightRed: #ff4242;
+--veryDarkCyan: #00252e;
+--veryPaleBlue: #f5faff;
+--headingsFontPoppins: "Poppins", sans-serif;
+--bodyFontsOpenSans: "Open Sans", sans-serif;
+--bodyWeightRegular: 400;
+--bodyWeightSemiBold: 600;
+--bodyWeightBold: 700;
+--mainTransitionDuration: .3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--bodyFontsOpenSans);
+}
+
+/* components */
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+@media (min-width: 480px) {
+    .container {
+        width: 472px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 975px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1150px;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        width: 1400px;
+    }
+}
+
+.button {
+    outline: none;
+    border: none;
+    border-radius: 200px;
+    padding: 12px;
+    box-shadow: 3px 3px 8px 0 rgba(0, 37, 46, 0.1);
+    font-weight: var(--bodyWeightSemiBold);
+    transition: var(--mainTransitionDuration);
+}
+
+/* header start */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header .logo {
+    max-width: 130px;
+}
+header .logo img {
+    width: 100%;
+}
+header .button {
+    color: var(--pink);
+    border: 1px solid var(--pink);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 8px;
+    width: 100px;
+}
+header .button:hover {
+    border-color: var(--lightPink);
+    color: var(--lightPink);
+}
+/* header end */
+
+/* landing start */
+.landing {
+    margin-top: 70px;
+    text-align: center;
+}
+.landing .container h1 {
+    color: var(--veryDarkCyan);
+    font-family: var(--headingsFontPoppins);
+    line-height: 1.5;
+    font-size: 27px;
+    margin-bottom: 14px;
+}
+.landing .container p {
+    color: var(--veryDarkCyan);
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 0 auto 35px;
+    font-weight: var(--bodyFontsOpenSans);
+}
+.landing .container .button {
+    color: white;
+    font-family: var(--lightRed);
+    background-color: var(--pink);
+    width: 64%;
+}
+.landing .container .button:hover {
+    background-color: var(--lightPink);
+}
+.landing .container .image-box {
+    max-width: 95%;
+    margin: 80px auto 0;
+}
+.landing .container .image-box img {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    /* header */
+    header .container {
+        padding: 40px 20px;
+    }
+    header .logo {
+        max-width: 200px;
+    }
+    header .button {
+        width: 170px;
+    }
+
+    /* landing */
+    .landing .container h1 {
+        font-size: 35px;
+    }
+    .landing .container p {
+        font-size: 19px;
+        max-width: 65%;
+    }
+    .landing .container .button {
+        font-size: 18px;
+        padding: 18px;
+        width: 40%;
+    }
+    .landing .container .image-box {
+        max-width: 70%;
+        margin: 80px auto 0;
+    }
+}
+@media (min-width: 1200px) {
+    /* header */
+    header .container {
+        padding: 50px 20px;
+    }
+    header .logo {
+        max-width: 250px;
+    }
+    header .button {
+        width: 200px;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+/* landing end */
+
+/* stats start */
+.stats {
+    margin-top: 100px;
+}
+.stats .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.stats .box {
+    max-width: 150px;
+    margin: 20px auto;
+}
+.stats .box img {
+    max-width: 25px;
+}
+.stats .box p:first-of-type {
+    font-size: 60px;
+    margin: -7px 0;
+    color: var(--veryDarkCyan);
+    font-family: var(--headingsFontPoppins);
+}
+.stats .box p:last-of-type {
+    color: #9b9ea2;
+    font-size: 15px;
+    font-weight: var(--bodyWeightSemiBold);
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .stats .container {
+        align-items: start;
+        flex-direction: row;
+    }
+    .stats .box {
+        max-width: fit-content;
+        margin: 0;
+    }
+    .stats .box img {
+        max-width: 35px;
+    }
+    .stats .box p:first-of-type {
+        font-size: 70px;
+        margin: -9px 0;
+    }
+    .stats .box p:last-of-type {
+        font-size: 17px;
+    }
+}
+@media (min-width: 1200px) {
+    .stats .box img {
+        max-width: 45px;
+    }
+    .stats .box p:first-of-type {
+        font-size: 90px;
+    }
+    .stats .box p:last-of-type {
+        font-size: 19px;
+    }
+}
+/* stats end */
