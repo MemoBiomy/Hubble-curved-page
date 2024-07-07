@@ -24,16 +24,16 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution at frontend mentor](https://your-solution-url.com)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Solution URL: [Solution at frontend mentor](https://www.frontendmentor.io/solutions/hubble-curved-page-html---css---flexbox---mobile-first-workflow-4SkHnFvgR9)
+- Live Site URL: [live site](https://memobiomy.github.io/Hubble-curved-page/)
 
 ## My process
 
 ### Built with
 
 - HTML5
-- Flexbox
 - CSS3
+- Flexbox
 - Mobile-first workflow
 
 ## Author
